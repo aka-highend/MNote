@@ -19,10 +19,14 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<MainViewHolder> {
 
+
     private ArrayList<Note> notes;
     private ColorGenerator generator = ColorGenerator.MATERIAL;
 
-    public RecyclerAdapter(ArrayList<Note> notes) { this.notes = notes; }
+
+    public RecyclerAdapter(ArrayList<Note> notes) {
+        this.notes = notes;
+    }
 
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
@@ -38,13 +42,16 @@ public class RecyclerAdapter extends RecyclerView.Adapter<MainViewHolder> {
     @Override
     public void onBindViewHolder(MainViewHolder mainViewHolder, int i) {
         mainViewHolder.title.setText(notes.get(i).getTitle());
-        TextDrawable drawable = TextDrawable.builder().
-                buildRound(String.valueOf(notes.get(i).getTitle().charAt(0)).toUpperCase(),
-                        generator.getColor(notes.get(i).getTitle()));
+        TextDrawable drawable = TextDrawable.builder().buildRound(String.valueOf(notes.get(i).getTitle().charAt(0)).toUpperCase(), generator.getColor(notes.get(i).getTitle()));
         mainViewHolder.imageView.setImageDrawable(drawable);
         mainViewHolder.dateView.setText(notes.get(i).getDate());
+
     }
 
     @Override
-    public int getItemCount() { return notes.size(); }
+    public int getItemCount() {
+        return notes.size();
+    }
+
+
 }

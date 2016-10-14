@@ -2,7 +2,6 @@ package com.rfachrur.mnote.Presenters;
 
 import android.Manifest;
 import android.animation.Animator;
-import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -24,7 +23,7 @@ import android.widget.RelativeLayout;
 
 import com.rfachrur.mnote.DB.DatabaseController;
 import com.rfachrur.mnote.DataModel.Note;
-import com.rfachrur.mnote.DetailsActivity;
+import com.rfachrur.mnote.Activity.DetailsActivity;
 import com.rfachrur.mnote.InterfaceView.MainView;
 import com.rfachrur.mnote.R;
 import com.rfachrur.mnote.Utils.ReverseInterpolator;
@@ -40,7 +39,7 @@ import io.codetail.animation.arcanimator.ArcAnimator;
 import io.codetail.animation.arcanimator.Side;
 
 import static android.content.Context.INPUT_METHOD_SERVICE;
-import static com.rfachrur.mnote.MainActivity.firstView;
+import static com.rfachrur.mnote.Activity.MainActivity.firstView;
 
 /**
  * Created by rfachrur on 10/13/16.

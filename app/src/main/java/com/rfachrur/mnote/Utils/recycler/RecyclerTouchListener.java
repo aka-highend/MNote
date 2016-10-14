@@ -6,7 +6,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.rfachrur.mnote.MainActivity;
+import com.rfachrur.mnote.Activity.MainActivity;
 
 /**
  * Created by rfachrur on 10/13/16.

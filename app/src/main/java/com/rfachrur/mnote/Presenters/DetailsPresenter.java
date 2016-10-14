@@ -3,7 +3,7 @@ package com.rfachrur.mnote.Presenters;
 import android.content.Intent;
 
 import com.rfachrur.mnote.DataModel.Note;
-import com.rfachrur.mnote.DetailsActivity;
+import com.rfachrur.mnote.Activity.DetailsActivity;
 import com.rfachrur.mnote.InterfaceView.DetailsView;
 
 /**

@@ -1,4 +1,4 @@
-package com.rfachrur.mnote;
+package com.rfachrur.mnote.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -32,6 +32,7 @@ import com.crashlytics.android.Crashlytics;
 import com.rfachrur.mnote.DataModel.Note;
 import com.rfachrur.mnote.InterfaceView.MainView;
 import com.rfachrur.mnote.Presenters.MainPresenter;
+import com.rfachrur.mnote.R;
 import com.rfachrur.mnote.Utils.Dialogs;
 import com.rfachrur.mnote.Utils.RecyclerViewEmptySupport;
 import com.rfachrur.mnote.Utils.SwipeableListener;

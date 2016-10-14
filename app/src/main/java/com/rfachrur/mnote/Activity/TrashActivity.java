@@ -1,4 +1,4 @@
-package com.rfachrur.mnote;
+package com.rfachrur.mnote.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +19,7 @@ import android.view.View;
 import com.rfachrur.mnote.DB.DatabaseController;
 import com.rfachrur.mnote.DataModel.Note;
 import com.rfachrur.mnote.InterfaceView.TrashView;
+import com.rfachrur.mnote.R;
 import com.rfachrur.mnote.Utils.SwipeableListener;
 import com.rfachrur.mnote.Utils.VerticalSpaceItemDecoration;
 import com.rfachrur.mnote.Utils.recycler.RecyclerTouchListener2;

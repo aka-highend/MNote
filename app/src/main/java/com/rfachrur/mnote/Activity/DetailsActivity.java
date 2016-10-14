@@ -1,4 +1,4 @@
-package com.rfachrur.mnote;
+package com.rfachrur.mnote.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.rfachrur.mnote.DataModel.Note;
 import com.rfachrur.mnote.InterfaceView.DetailsView;
 import com.rfachrur.mnote.Presenters.DetailsPresenter;
+import com.rfachrur.mnote.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

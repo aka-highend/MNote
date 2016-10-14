@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.rfachrur.mnote">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -11,8 +12,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="com.rfachrur.mnote.MainActivity">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name="com.rfachrur.mnote.Activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +26,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.rfachrur.mnote.DetailsActivity"
-            android:parentActivityName="com.rfachrur.mnote.MainActivity"
+            android:name="com.rfachrur.mnote.Activity.DetailsActivity"
+            android:parentActivityName="com.rfachrur.mnote.Activity.MainActivity"
             android:windowSoftInputMode="adjustResize"/>
 
         <activity
-            android:name="com.rfachrur.mnote.TrashActivity"
-            android:parentActivityName="com.rfachrur.mnote.MainActivity"
+            android:name="com.rfachrur.mnote.Activity.TrashActivity"
+            android:parentActivityName="com.rfachrur.mnote.Activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <meta-data

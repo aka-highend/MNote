@@ -1,2 +1,2 @@
 # MNote
-Initial commit
+A notes app on android

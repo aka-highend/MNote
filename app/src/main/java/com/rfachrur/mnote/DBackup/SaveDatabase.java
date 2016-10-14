@@ -21,9 +21,9 @@ public class SaveDatabase {
             File data = Environment.getDataDirectory();
 
             if (sd.canWrite()) {
-                String currentDBPath = "//data//" + "com.subhrajyoti.noteworthy"
-                        + "//databases//" + "notes.db";
-                String backupDBPath = "/NotesBackup.db";
+                String currentDBPath = "//data//" + "com.rfachrur.mnote"
+                        + "//databases//" + "mnote.db";
+                String backupDBPath = "/MNoteBackup.db";
                 File currentDB = new File(data, currentDBPath);
                 File backupDB = new File(sd, backupDBPath);
 

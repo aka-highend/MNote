@@ -12,8 +12,7 @@ import com.rfachrur.mnote.R;
  *
  */
 
-public class MainViewHolder extends RecyclerView.ViewHolder
-        implements View.OnClickListener, View.OnLongClickListener {
+class MainViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
 
     TextView title;
     ImageView imageView;
@@ -22,8 +21,9 @@ public class MainViewHolder extends RecyclerView.ViewHolder
     MainViewHolder(View itemView) {
         super(itemView);
         title = (TextView) itemView.findViewById(R.id.title);
-        imageView = (ImageView) itemView.findViewById(R.id.first_letter);
+        imageView = (ImageView) itemView.findViewById(R.id.letter_head);
         dateView = (TextView) itemView.findViewById(R.id.dateView);
+
     }
 
     @Override
@@ -32,5 +32,7 @@ public class MainViewHolder extends RecyclerView.ViewHolder
     }
 
     @Override
-    public boolean onLongClick(View v) { return false; }
+    public boolean onLongClick(View v) {
+        return false;
+    }
 }

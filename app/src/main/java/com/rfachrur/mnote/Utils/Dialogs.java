@@ -29,7 +29,7 @@ public class Dialogs {
                 .title(R.string.backup_title)
                 .content(R.string.backup_content)
                 .positiveText(R.string.backup_button)
-                .negativeText(R.string.restore)
+                .negativeText(R.string.restore2)
                 .neutralText(R.string.cancel)
                 .onPositive(new MaterialDialog.SingleButtonCallback() {
                     @Override

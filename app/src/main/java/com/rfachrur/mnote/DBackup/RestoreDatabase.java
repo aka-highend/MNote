@@ -22,7 +22,7 @@ public class RestoreDatabase {
             if (storage.canWrite()) {
                 String currentDBPath = "//data//" + "com.rfachrur.mnote"
                         + "//databases//" + "note.db";
-                String backupDBPath = "/BackupNote.db";  // SD Directory
+                String backupDBPath = "/MNoteBackup.db";  // SD Directory
                 File backupDB = new File(data, currentDBPath);
                 File currentDB = new File(storage, backupDBPath);
 
@@ -34,7 +34,7 @@ public class RestoreDatabase {
             }
             return true;
         } catch (Exception e) {
-            Log.v("TAG IMPORT DB",e.getLocalizedMessage());
+            Log.v("TAG RESTORE DB",e.getLocalizedMessage());
             return false;
         }
     }

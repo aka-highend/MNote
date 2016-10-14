@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">MNote</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="transition_name">TransitionName</string>
+    <string name="search_string">Search</string>
+    <string name="drive_backup_text">Backing up all your data to Google Drive allows you to restore all your notes in case you lose or change your device</string>
+    <string name="backup_now">Backup now</string>
+    <string name="na">N/A</string>
+    <string name="backup_folder">Backup Folder</string>
+    <string name="open_drive">Open Drive</string>
+    <string name="recent_backups">Recent Backups</string>
+    <string name="restore_hint">(click on any of the available backups to restore</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="first_letter">first_letter</string>
+    <string name="add_some_note_to_your_list">Add some note to your list</string>
+    <string name="restore_to_this_version">Restore to this version</string>
+    <string name="restoring_backup_will_overwrite_all_the_existing_data">Restoring backup will overwrite all the existing data</string>
+    <string name="restore">Restore?</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty_note_message">Please enter a valid note</string>
+    <string name="html_text"><![CDATA[<p>Check out the project on <a href=\"https://github.com/SubhrajyotiSen/Noteworthy\">GitHub</a></p>]]></string>
+    <string name="backup_title">Backup/Restore</string>
+    <string name="backup_content">Backup your notes locally so that you can retrieve later</string>
+    <string name="backup_button">Backup</string>
+    <string name="backup_success">Backup successful</string>
+    <string name="backup_fail">Backup unsuccessful</string>
+    <string name="restore_success">Restore successful</string>
+    <string name="restore_fail">Restore unsuccessful</string>
+    <string name="restore2">Restore</string>
+    <string name="navigation_header">Navigation Header</string>
+    <string name="moved_trash">\' moved to Trash</string>
+    <string name="search">Search</string>
+    <string name="backup_restore">Backup/Restore</string>
+    <string name="local">Local</string>
+    <string name="trash">Trash</string>
+    <string name="about">About</string>
+    <string name="app_name_full">MNote GGWP</string>
 </resources>

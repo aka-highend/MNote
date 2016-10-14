@@ -28,6 +28,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
 import com.rfachrur.mnote.DataModel.Note;
 import com.rfachrur.mnote.InterfaceView.MainView;
 import com.rfachrur.mnote.Presenters.MainPresenter;
@@ -38,6 +39,7 @@ import com.rfachrur.mnote.Utils.VerticalSpaceItemDecoration;
 import com.rfachrur.mnote.Utils.recycler.RecyclerTouchListener;
 import com.rfachrur.mnote.ViewAdapter.RecyclerAdapter;
 
+import io.fabric.sdk.android.Fabric;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -82,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
 
         //setup toolbar

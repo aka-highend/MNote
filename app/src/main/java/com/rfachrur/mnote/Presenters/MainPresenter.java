@@ -214,7 +214,9 @@ public class MainPresenter {
             animator.setDuration(200);
 
             //animator for reverse reveal animation
-            animator.setInterpolator(new ReverseInterpolator());
+//            animator.setInterpolator(new ReverseInterpolator());
+            Animator anim_reverse = ViewAnimationUtils.createCircularReveal(second, cx, cy, 0, radius);
+            anim_reverse.setInterpolator(new ReverseInterpolator());
 
             //check if first view is visible
             if (firstView) {
@@ -232,14 +234,15 @@ public class MainPresenter {
             }
             //if second view is visible
             else {
-                animator_reverse.addListener(new SupportAnimator.AnimatorListener() {
+                anim_reverse.addListener(new Animator.AnimatorListener() {
 
                     @Override
-                    public void onAnimationStart() {
+                    public void onAnimationStart(Animator animation) {
+
                     }
 
                     @Override
-                    public void onAnimationEnd() {
+                    public void onAnimationEnd(Animator animation) {
                         second.setVisibility(View.INVISIBLE);
                         first.setVisibility(View.VISIBLE);
                         hideSoftKeyboard();
@@ -258,17 +261,17 @@ public class MainPresenter {
                     }
 
                     @Override
-                    public void onAnimationCancel() {
+                    public void onAnimationCancel(Animator animation) {
 
                     }
 
                     @Override
-                    public void onAnimationRepeat() {
+                    public void onAnimationRepeat(Animator animation) {
 
                     }
 
                 });
-                animator_reverse.start();
+                anim_reverse.start();
             }
 
         }

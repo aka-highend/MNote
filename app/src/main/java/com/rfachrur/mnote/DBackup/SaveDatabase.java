@@ -15,15 +15,15 @@ import java.nio.channels.FileChannel;
 
 public class SaveDatabase {
 
-    public static boolean save(){
+    public static boolean save() {
         try {
             File sd = Environment.getExternalStorageDirectory();
             File data = Environment.getDataDirectory();
 
             if (sd.canWrite()) {
                 String currentDBPath = "//data//" + "com.rfachrur.mnote"
-                        + "//databases//" + "mnote.db";
-                String backupDBPath = "/MNoteBackup.db";
+                        + "//databases//" + "notes.db";
+                String backupDBPath = "/NotesBackup.db";
                 File currentDB = new File(data, currentDBPath);
                 File backupDB = new File(sd, backupDBPath);
 
@@ -35,9 +35,10 @@ public class SaveDatabase {
             }
             return true;
         } catch (Exception e){
-            Log.e("TAG SAVE DB",e.getLocalizedMessage());
+            Log.e("haha",e.getLocalizedMessage());
             return false;
         }
+
     }
 
 }

@@ -17,14 +17,14 @@ public class RestoreDatabase {
 
     public static boolean importDB() {
         try {
-            File sd = Environment.getExternalStorageDirectory();
+            File externalStorageDirectory = Environment.getExternalStorageDirectory();
             File data = Environment.getDataDirectory();
-            if (sd.canWrite()) {
+            if (externalStorageDirectory.canWrite()) {
                 String currentDBPath = "//data//" + "com.rfachrur.mnote"
                         + "//databases//" + "notes.db";
                 String backupDBPath = "/NotesBackup.db"; // From SD directory.
                 File backupDB = new File(data, currentDBPath);
-                File currentDB = new File(sd, backupDBPath);
+                File currentDB = new File(externalStorageDirectory, backupDBPath);
 
                 FileChannel src = new FileInputStream(currentDB).getChannel();
                 FileChannel dst = new FileOutputStream(backupDB).getChannel();
@@ -34,7 +34,7 @@ public class RestoreDatabase {
             }
             return true;
         } catch (Exception e) {
-            Log.v("TAG",e.getLocalizedMessage());
+            Log.v("TAG RESTORE DATABASE",e.getLocalizedMessage());
             return false;
 
         }

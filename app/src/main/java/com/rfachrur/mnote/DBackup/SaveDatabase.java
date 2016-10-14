@@ -17,15 +17,15 @@ public class SaveDatabase {
 
     public static boolean save() {
         try {
-            File sd = Environment.getExternalStorageDirectory();
+            File externalStorageDirectory = Environment.getExternalStorageDirectory();
             File data = Environment.getDataDirectory();
 
-            if (sd.canWrite()) {
+            if (externalStorageDirectory.canWrite()) {
                 String currentDBPath = "//data//" + "com.rfachrur.mnote"
                         + "//databases//" + "notes.db";
                 String backupDBPath = "/NotesBackup.db";
                 File currentDB = new File(data, currentDBPath);
-                File backupDB = new File(sd, backupDBPath);
+                File backupDB = new File(externalStorageDirectory, backupDBPath);
 
                 FileChannel src = new FileInputStream(currentDB).getChannel();
                 FileChannel dst = new FileOutputStream(backupDB).getChannel();
@@ -35,7 +35,7 @@ public class SaveDatabase {
             }
             return true;
         } catch (Exception e){
-            Log.e("haha",e.getLocalizedMessage());
+            Log.e("TAG SAVE DATABASE",e.getLocalizedMessage());
             return false;
         }
 
